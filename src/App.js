@@ -5,6 +5,7 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import About from './components/About';
 import Layout from './components/Layout';
+import Privacy from './components/Privacy';
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Route path='blog' element={<Blog />} />
 					<Route path='about' element={<About />} />
 					<Route path='contact' element={<Contact />} />
+					<Route path='privacy' element={<Privacy />} />
 				</Route>
 			</Routes>
 		</>
