@@ -1,5 +1,6 @@
 import React from 'react'
 import FeaturedPost from './FeaturedPost';
+import HomeAllPosts from './HomeAllPosts';
 
 function Home() {
 	return (
@@ -12,6 +13,9 @@ function Home() {
 						alt='Featured Post Background' />
 				</div>
 				<div className='home-featured-post__overlay'></div>
+			</section>
+			<section className='home-page__posts home-all-posts'>
+				<HomeAllPosts />
 			</section>
 		</div>
 	)

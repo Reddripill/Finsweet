@@ -57,6 +57,7 @@ section {
 html,
 body {
 	height: 100%;
+	font-size: rem(16);
 }
 body {
 	line-height: 1;
@@ -90,7 +91,6 @@ button::-moz-focus-inner {
 a,
 a:visited {
 	text-decoration: none;
-	color: #fff;
 }
 a:hover {
 	text-decoration: none;
@@ -216,10 +216,23 @@ h2 {
 	&_yellow {
 		background-color: $yellowColor;
 		transition: all 0.3s ease 0s;
+		color: $darkBLueColor;
 		@media(any-hover : hover){
 			&:hover {
 				background-color: #EDC14A;
 			}
+		}
+	}
+}
+
+.view {
+	color: #592EA9;
+	line-height: rem(28);
+	transition: all 0.3s ease 0s;
+	font-weight: 700;
+	@media(any-hover : hover){
+		&:hover {
+			text-decoration: underline;
 		}
 	}
 }
@@ -293,6 +306,9 @@ h2 {
 		&__item {
 			margin: rem(5) 0;
 			transition: all 0.3s ease 0s;
+			a {
+				color: #fff;
+			}
 			@media(any-hover : hover){
 				&:hover {
 					text-decoration: underline;
@@ -306,6 +322,9 @@ h2 {
 		}
 		&__item {
 			font-size: rem(30);
+			a {
+				color: #fff;
+			}
 			&:not(:last-child) {
 				margin-bottom: rem(20);
 			}
@@ -328,6 +347,7 @@ h2 {
 .home-page {
 	margin-top: rem(80);
 }
+
 
 
 .home-featured-post {
@@ -424,6 +444,210 @@ h2 {
 }
 
 
+
+.home-all-posts {
+	padding: rem(128) 0;
+	@media(max-width : $pc){
+		padding: rem(60) 0;
+	}
+	@media(max-width : $mobileSmall){
+		padding: rem(40) 0;
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		column-gap: rem(15);
+		@media(max-width : $mobile){
+			flex-direction: column;
+			row-gap: rem(60);
+		}
+		@media(max-width : $mobileSmall){
+			row-gap: rem(40);
+		}
+	}
+}
+
+.home-all-posts-featured {
+	@media(min-width : $mobile){
+		flex: 1 1 prc(669, 1220);
+	}
+	&__title {
+		color: rgba(35, 37, 54, 1);
+		letter-spacing: rem(-2);
+		margin-bottom: rem(32);
+		@media(max-width : $pc){
+			margin-bottom: rem(25);
+			font-size: rem(28);
+		}
+	}
+	&__card {
+		border: 1px solid rgba(109, 110, 118, 0.1);
+		padding: prc(32, 669);
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	&__image {
+		width: 100%;
+		padding-bottom: prc(352, 699);
+		margin-bottom: rem(32);
+	}
+	&__info {
+		display: flex;
+		color: #4C4C4C;
+		font-size: rem(14);
+		line-height: rem(20);
+		font-weight: 500;
+		margin-bottom: rem(16);
+	}
+	&__author {
+		padding-right: rem(10);
+		border-right: 2px solid #4C4C4C;
+		span {
+			color: rgba(89, 46, 169, 1);
+			font-weight: bold;
+		}
+	}
+	&__date {
+		padding-left: rem(10);
+	}
+	&__name {
+		color: $darkBLueColor;
+		font-weight: bold;
+		letter-spacing: rem(-1);
+		font-family: 'Sen';
+		font-size: rem(28);
+		line-height: math.div(40, 28) * 100%;
+		margin-bottom: rem(16);
+		@media(max-width : $pc){
+			font-size: rem(20);
+			margin-bottom: rem(8);
+		}
+		@media(max-width : $mobile){
+			font-size: rem(16);
+		}
+	}
+	&__excerpt {
+		font-size: rem(16);
+		line-height: math.div(28, 16) * 100%;
+		color: #6D6E76;
+		margin-bottom: rem(32);
+		@media(max-width : $tablet){
+			font-size: rem(14);
+			line-height: math.div(24, 14) * 100%;
+			margin-bottom: rem(25);
+		}
+	}
+	a {
+		color: $darkBLueColor;
+	}
+}
+
+.home-all-posts-list {
+	@media(min-width : $mobile){
+		flex: 1 1 prc(517, 1220);
+	}
+	@media(max-width : $mobile){
+		width: 100%;
+	}
+	&__head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: rem(32);
+		@media(max-width : $pc){
+			margin-bottom: rem(25);
+		}
+	}
+	&__title {
+		color: rgba(35, 37, 54, 1);
+		letter-spacing: rem(-2);
+		@media(max-width : $pc){
+			font-size: rem(28);
+		}
+	}
+	&__view {
+		font-size: rem(14);
+	}
+	&__list {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+		transition: all 0.3s ease 0s;
+		&:active {
+			background-color: #FBF6EA;
+		}
+		@media(any-hover : hover){
+			&:hover {
+				background-color: #FBF6EA;
+			}
+		}
+	}
+	&__link {
+		display: inline-block;
+		padding: rem(32) 0 rem(25) rem(32);
+		@media(max-width : $pc){
+			padding: rem(25) 0 rem(15) rem(25);
+		}
+		@media(max-width : $tablet){
+			padding: rem(15);
+		}
+		@media(max-width : $mobile){
+			padding: prc(30, 767) prc(15, 767);
+		}
+	}
+	&__info {
+		display: flex;
+		color: #4C4C4C;
+		font-size: rem(14);
+		line-height: rem(20);
+		font-weight: 500;
+		margin-bottom: rem(16);
+		@media(max-width : $tablet){
+			margin-bottom: rem(8);
+			font-size: rem(12);
+			line-height: rem(16);
+		}
+	}
+	&__author {
+		padding-right: rem(10);
+		border-right: 2px solid #4C4C4C;
+		@media(max-width : $tablet){
+			padding-right: rem(5);
+		}
+		span {
+			color: rgba(89, 46, 169, 1);
+			font-weight: bold;
+		}
+	}
+	&__date {
+		padding-left: rem(10);
+		@media(max-width : $tablet){
+			padding-left: rem(5);
+		}
+	}
+	&__name {
+		max-width: prc(369, 517);
+		color: #232536;
+		font-size: rem(24);
+		font-family: 'Sen';
+		font-weight: bold;
+		line-height: math.div(32, 24) * 100%;
+		@media(max-width : $pc){
+			font-size: rem(20);
+		}
+		@media(max-width : $tablet){
+			max-width: 100%;
+		}
+		@media(max-width : $mobile){
+			font-size: rem(16);
+		}
+	}
+}
+
+
 // ==============================================Home
 
 
@@ -483,6 +707,9 @@ h2 {
 	&__item {
 		margin: rem(10) 0;
 		transition: all 0.3s ease 0s;
+		a {
+			color: #fff;
+		}
 		@media(any-hover : hover){
 			&:hover {
 				text-decoration: underline;

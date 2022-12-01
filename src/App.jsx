@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import Layout from './components/Layout';
 import Privacy from './components/Privacy';
+import SinglePost from './components/SinglePost';
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Route path='about' element={<About />} />
 					<Route path='contact' element={<Contact />} />
 					<Route path='privacy' element={<Privacy />} />
+					<Route path='post/:postId' element={<SinglePost />} />
 				</Route>
 			</Routes>
 		</>
