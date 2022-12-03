@@ -112,6 +112,10 @@ h6 {
 }
 
 
+// ==============================================General
+
+
+
 h2 {
 	font-size: rem(36);
 	line-height: rem(48);
@@ -121,38 +125,6 @@ h2 {
 		font-size: rem(24);
 		line-height: rem(36);
 	}
-}
-//-webkit-overflow-scrolling: touch;
-/*
-&::-webkit-scrollbar {
-	display: none;
-}
-*/
-// -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
-// Убирает отображение нажатия
-
-#root {
-	width: 100%;
-	height: 100%;
-}
-
-.wrapper {
-	width: 100%;
-	min-height: 100%;
-	overflow: hidden;
-	display: flex;
-	flex-direction: column;
-}
-
-._container {
-	max-width: rem($maxWidthContainer);
-	margin: 0 auto;
-	padding: 0 rem(15);
-}
-
-.page {
-	flex: 1 1 auto;
-	min-width: 0;
 }
 
 .burger {
@@ -200,8 +172,6 @@ h2 {
 	}
 }
 
-
-
 .button {
 	font-family: 'Sen';
 	font-size: rem(18);
@@ -235,6 +205,117 @@ h2 {
 			text-decoration: underline;
 		}
 	}
+}
+
+
+.categories {
+	margin-bottom: rem(128);
+	@media(max-width : $pc){
+		margin-bottom: rem(60);
+	}
+	@media(max-width : $mobileSmall){
+		margin-bottom: rem(40);
+	}
+	&__container {
+	}
+	&__title {
+		color: $darkBLueColor;
+		margin-bottom: math.div(48, 36) * 1em;
+		text-align: center;
+	}
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: rem(32);
+		@media(max-width : $mobile){
+			gap: rem(16);
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		width: rem(296);
+		border: 1px solid rgba(109, 110, 118, 0.3);
+		transition: background-color 0.3s ease 0s;
+		@media(any-hover : hover){
+			&:hover {
+				background-color: $yellowColor;
+				border-color: $yellowColor;
+			}
+		}
+		a {
+			width: 100%;
+			height: 100%;
+			padding: rem(32);
+		}
+	}
+	&__icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: rem(48);
+		height: rem(48);
+		background-color: #FBF6EA;
+		border-radius: rem(8);
+	}
+	&__name {
+		font-family: 'Sen';
+		font-weight: bold;
+		letter-spacing: rem(-1);
+		font-size: rem(28);
+		line-height: math.div(40, 28) * 100%;
+		margin-top: rem(16);
+		margin-bottom: math.div(4, 28) * 1em;
+		color: $darkBLueColor;
+		@media(max-width : $mobile){
+			font-size: rem(18);
+			letter-spacing: normal;
+			line-height: math.div(25, 18) * 100%;
+		}
+	}
+	&__text {
+		line-height: math.div(28, 16) * 100%;
+		color: #6D6E76;
+		@media(max-width : $mobile){
+			font-size: rem(14);
+		}
+	}
+}
+
+
+// ==============================================General
+
+//-webkit-overflow-scrolling: touch;
+/*
+&::-webkit-scrollbar {
+	display: none;
+}
+*/
+// -webkit-tap-highlight-color: rgba(0, 0, 0, 0); 
+// Убирает отображение нажатия
+
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: rem($maxWidthContainer);
+	margin: 0 auto;
+	padding: 0 rem(15);
+}
+
+.page {
+	flex: 1 1 auto;
+	min-width: 0;
 }
 
 

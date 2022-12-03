@@ -1,4 +1,5 @@
 import React from 'react'
+import Categories from './Category';
 import FeaturedPost from './FeaturedPost';
 import HomeAboutUs from './HomeAboutUs';
 import HomeAllPosts from './HomeAllPosts';
@@ -20,6 +21,9 @@ function Home() {
 			</section>
 			<section className='home-page__about home-about-us'>
 				<HomeAboutUs />
+			</section>
+			<section className='home-page__categories categories'>
+				<Categories />
 			</section>
 		</div>
 	)
