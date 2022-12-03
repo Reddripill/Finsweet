@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Finsweet/static/css/main.511122c4.css",
+    "main.js": "/Finsweet/static/js/main.fe2df42e.js",
+    "index.html": "/Finsweet/index.html",
+    "main.511122c4.css.map": "/Finsweet/static/css/main.511122c4.css.map",
+    "main.fe2df42e.js.map": "/Finsweet/static/js/main.fe2df42e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.511122c4.css",
+    "static/js/main.fe2df42e.js"
+  ]
+}
