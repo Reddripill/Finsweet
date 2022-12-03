@@ -2,7 +2,7 @@ import React from 'react'
 
 function SinglePost() {
 	return (
-		<div>SinglePost</div>
+		<div style={{ marginTop: "100px", color: '#000' }}>SinglePost</div>
 	)
 }
 

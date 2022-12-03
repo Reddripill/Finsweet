@@ -25,7 +25,7 @@ function HomeAllPosts() {
 					<div className='home-all-posts-featured__excerpt'>
 						Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
 					</div>
-					<Link to='/' className='home-all-posts-featured__button button button_yellow'>
+					<Link to='/post/:postId' className='home-all-posts-featured__button button button_yellow'>
 						{'Read More >'}
 					</Link>
 				</div>

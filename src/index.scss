@@ -8,7 +8,7 @@ $yellowColor: #FFD050;
 $darkBLueColor: #232536;
 $lightYellowColor: #FFF5D8;
 
-$maxWidthContainer: 1250;
+$maxWidthContainer: 1310;
 $pc: em($maxWidthContainer);
 $tablet: em(991.98);
 $mobile: em(767.98);
@@ -354,7 +354,7 @@ h2 {
 	position: relative;
 	&__wrapper {
 		@media(min-width : $mobileSmall){
-			max-width: prc(803, 1250);
+			max-width: prc(803, 1280);
 		}
 	}
 	&__background {
@@ -446,12 +446,12 @@ h2 {
 
 
 .home-all-posts {
-	padding: rem(128) 0;
+	margin: rem(128) 0;
 	@media(max-width : $pc){
-		padding: rem(60) 0;
+		margin: rem(60) 0;
 	}
 	@media(max-width : $mobileSmall){
-		padding: rem(40) 0;
+		margin: rem(40) 0;
 	}
 	&__container {
 		display: flex;
@@ -470,7 +470,7 @@ h2 {
 
 .home-all-posts-featured {
 	@media(min-width : $mobile){
-		flex: 1 1 prc(669, 1220);
+		flex: 1 1 prc(669, 1280);
 	}
 	&__title {
 		color: rgba(35, 37, 54, 1);
@@ -546,7 +546,7 @@ h2 {
 
 .home-all-posts-list {
 	@media(min-width : $mobile){
-		flex: 1 1 prc(517, 1220);
+		flex: 1 1 prc(517, 1280);
 	}
 	@media(max-width : $mobile){
 		width: 100%;
@@ -648,6 +648,105 @@ h2 {
 }
 
 
+
+
+.home-about-us {
+	margin: rem(128) 0;
+	@media(max-width : $pc){
+		margin: rem(60) 0;
+	}
+	@media(max-width : $mobileSmall){
+		margin: rem(40) 0;
+	}
+	&__container {
+	}
+	&__wrapper {
+		background-color: #F4F0F8;
+		padding: prc(60, 991) prc(40, 991);
+		@media(min-width: $mobile){
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-auto-flow: row;
+			gap: prc(60, 1280);
+		}
+		@media(min-width : $tablet){
+			padding: prc(95, 1280) prc(80, 1280);
+		}
+		@media(max-width : $mobile){
+			display: flex;
+			flex-direction: column;
+			row-gap: rem(40);
+			padding: rem(30) rem(15);
+		}
+	}
+	&__item {
+	}
+	&__title {
+		letter-spacing: 3px;
+		text-transform: uppercase;
+		color: #232536;
+		font-weight: 600;
+		line-height: rem(20);
+		margin-bottom: math.div(24, 16) * 1em;
+		@media(max-width : $mobile){
+			font-size: rem(14);
+			margin-bottom: math.div(14, 16) * 1em;
+		}
+	}
+	&__subtitle {
+		letter-spacing: -2px;
+		color: #232536;
+		max-width: prc(490, 530);
+		margin-bottom: math.div(16, 36) * 1em;
+		@media(max-width : $tablet){
+			font-size: rem(32);
+			line-height: rem(38);
+		}
+		@media(max-width : $mobile){
+			font-size: rem(24);
+			line-height: rem(30);
+			margin-bottom: math.div(5, 24) * 1em;
+		}
+		&_less {
+			font-family: 'Sen';
+			font-weight: 700;
+			font-size: rem(28);
+			line-height: math.div(40, 28) * 100%;
+			letter-spacing: rem(-1);
+			margin-bottom: math.div(16, 28) * 1em;
+			@media(max-width : $tablet){
+				font-size: rem(22);
+				line-height: rem(30);
+			}
+		}
+	}
+	&__text {
+		line-height: rem(28);
+		color: #6D6E76;
+		&:not(:last-child) {
+			margin-bottom: 1em;
+		}
+		@media(max-width : $tablet){
+			font-size: rem(14);
+			line-height: rem(24);
+			&:not(:last-child) {
+				margin-bottom: math.div(8, 14) * 1em;
+			}
+		}
+	}
+	&__link {
+		color: #592EA9;
+		font-size: rem(18);
+		font-family: 'Sen';
+		font-weight: bold;
+		line-height: rem(32);
+		@media(max-width : $mobile){
+			font-size: rem(16);
+			line-height: rem(22);
+		}
+	}
+}
+
 // ==============================================Home
 
 
@@ -720,7 +819,7 @@ h2 {
 
 .subscribe-footer {
 	background-color: rgba(46, 48, 64, 1);
-	padding: prc(80, 1220) prc(65, 1220);
+	padding: prc(80, 1280) prc(65, 1280);
 	margin-bottom: rem(48);
 	display: flex;
 	align-items: flex-start;

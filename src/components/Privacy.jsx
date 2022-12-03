@@ -2,7 +2,7 @@ import React from 'react'
 
 function Privacy() {
 	return (
-		<div>Privacy</div>
+		<div style={{ marginTop: "100px", color: '#000' }}>Privacy</div>
 	)
 }
 
