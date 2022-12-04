@@ -4,6 +4,7 @@ import FeaturedPost from './FeaturedPost';
 import HomeAboutUs from './HomeAboutUs';
 import HomeAllPosts from './HomeAllPosts';
 import Join from './Join';
+import HomeStory from './HomeStory';
 
 function Home() {
 	return (
@@ -25,6 +26,9 @@ function Home() {
 			</section>
 			<section className='home-page__categories categories'>
 				<Categories />
+			</section>
+			<section className='home-page__story home-story'>
+				<HomeStory />
 			</section>
 			<section className='home-page__join join'>
 				<Join />
