@@ -5,7 +5,7 @@ import Blog from './components/Blog';
 import Contact from './components/Contact';
 import About from './components/About';
 import Layout from './components/Layout';
-import Privacy from './components/Privacy';
+import Privacy from './components/Privacy/Privacy';
 import SinglePost from './components/SinglePost';
 
 function App() {
