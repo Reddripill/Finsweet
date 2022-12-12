@@ -5,6 +5,8 @@ import HomeAboutUs from './HomeAboutUs';
 import HomeAllPosts from './HomeAllPosts';
 import Join from './Join';
 import HomeStory from './HomeStory';
+import Authors from './Authors';
+import HomeReports from './HomeReports';
 
 function Home() {
 	return (
@@ -29,6 +31,12 @@ function Home() {
 			</section>
 			<section className='home-page__story home-story'>
 				<HomeStory />
+			</section>
+			<section className='home-page__authors authors'>
+				<Authors />
+			</section>
+			<section className='home-page__reports home-reports'>
+				<HomeReports />
 			</section>
 			<section className='home-page__join join'>
 				<Join />

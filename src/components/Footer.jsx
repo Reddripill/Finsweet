@@ -65,7 +65,7 @@ function Footer() {
 							<img src='/img/icons/instagram.svg' alt='LinkedId' />
 						</Link>
 						<Link to='/'>
-							<img src='/img/icons/linkedId.svg' alt='LinkedId' />
+							<img src='/img/icons/linkedIn.svg' alt='LinkedIn' />
 						</Link>
 					</div>
 				</div>

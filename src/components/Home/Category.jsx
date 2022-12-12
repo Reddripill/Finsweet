@@ -9,7 +9,7 @@ function Categories() {
 				<li className='categories__item'>
 					<Link to='/'>
 						<div className='categories__icon'>
-							<img className='categories__icon' src='/img/category/business.svg' alt='Icon of the category' />
+							<img src='/img/category/business.svg' alt='Icon of the category' />
 						</div>
 						<div className='categories__name'>Business</div>
 						<div className='categories__text'>
@@ -20,7 +20,7 @@ function Categories() {
 				<li className='categories__item'>
 					<Link to='/'>
 						<div className='categories__icon'>
-							<img className='categories__icon' src='/img/category/economy.svg' alt='Icon of the category' />
+							<img src='/img/category/economy.svg' alt='Icon of the category' />
 						</div>
 						<div className='categories__name'>Startup</div>
 						<div className='categories__text'>
@@ -31,7 +31,7 @@ function Categories() {
 				<li className='categories__item'>
 					<Link to='/'>
 						<div className='categories__icon'>
-							<img className='categories__icon' src='/img/category/economy.svg' alt='Icon of the category' />
+							<img src='/img/category/economy.svg' alt='Icon of the category' />
 						</div>
 						<div className='categories__name'>Economy</div>
 						<div className='categories__text'>
@@ -42,7 +42,7 @@ function Categories() {
 				<li className='categories__item'>
 					<Link to='/'>
 						<div className='categories__icon'>
-							<img className='categories__icon' src='/img/category/technology.svg' alt='Icon of the category' />
+							<img src='/img/category/technology.svg' alt='Icon of the category' />
 						</div>
 						<div className='categories__name'>Technology</div>
 						<div className='categories__text'>
